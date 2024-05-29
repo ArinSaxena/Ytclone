@@ -1,0 +1,524 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: "Roboto", sans-serif;
+     
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    
+}
+.navbar{
+    position: sticky;
+    top: 0;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+
+}
+.left-nav{
+    display: flex;
+    justify-content: space-between;
+    gap: 14px;
+}
+.left-nav img:nth-child(2){
+   width: 80px;
+}
+.center-nav{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.center-nav > input{
+    border:1px solid rgb(48,48,48);
+    padding: 10px;
+    width: 60% ;
+    background-color: black;
+    border-top-left-radius:20px;
+    border-bottom-left-radius: 20px;
+    /* height:100% ; */
+}
+.center-nav img:nth-child(2){
+    background-color: rgb(34,34,34);
+    padding: 6px 8px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-right: 25px;
+}
+.right-nav{
+    display: flex;
+    gap: 20px;
+}
+.right-nav img:nth-child(5){
+    width: 25px;
+    height:25px;
+    border-radius: 50%;
+    margin-top: 2px;
+}
+.right-nav img:nth-child(1){
+    display: none;
+}
+.right-nav img:nth-child(2){
+    display:none ;
+}
+.ytPremium{
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    gap: 50px;
+}
+.ytPremium .ytPremiumLogo > img{
+    padding: 0;
+    display: block;
+    /* margin-top: 0px; */
+}
+
+.yt-desc{
+    font-family: Roboto Bold;
+    width: 40%;
+    text-align: center;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    
+}
+.yt-desc h2{
+    text-align: center;
+    font-family: Roboto Bold;
+    font-weight: 100;
+    font-size: 30px;
+    width: 80%;
+}
+.premium-details{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+.premium-details p:nth-child(2){
+    font-size: larger;
+    font-weight: light;
+    width: 40%;
+    
+}
+.premium-details button{
+    padding: 10px 0;
+    border-radius: 20px;
+    width: 15%;
+    background-color: rgb(101,184,255);
+    border: none;
+    cursor: pointer;
+}
+/* .premium-details p:nth-child(2){
+    font-size:24px ;
+    width: 100%;
+} */
+.blue{
+    color:rgb(101,186,255) ;
+}
+
+.features{
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    gap: 10px;
+     padding-top: 40px; 
+    color: white;
+    font-family: Roboto, Arial, sans-serif;
+    font-weight: 10;
+   
+}
+.features div:nth-child(1),.features div:nth-child(2),.features div:nth-child(3){
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 22%;
+    gap: 10px;
+    height: 90%;
+
+}
+
+.left-fea img:nth-child(1){
+    width: 80px;
+}
+.para{
+    /* color: rgb(130,130,132); */
+}
+.bg1{
+    background-image: url(coding/bg1.jpeg);
+    height: 50%;
+    background-size: cover;
+    
+}
+.bg1 div, .bg2 div{
+    padding-top: 80px ;
+    padding-left: 650px;
+    color: white;
+}
+.bg2{
+    background-image: url(coding/bg3.jpeg);
+    height: 50%;
+    background-size: cover;
+}
+.bg1 h2,.bg2 h2{
+    font-size: 3rem;
+    font-weight: lighter;
+}
+.bg1 p , .bg2 p{
+    width: 70%;
+}
+.faqs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    height: 61%;
+    
+    
+    
+}
+.smallfaq{
+    width: 40%;
+    gap: 90px;
+}
+.faqdetail{
+    width: 45%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    font-size: x-large;
+    gap: 20px;
+    width: 70%;
+
+}
+.drop{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    font-size: 20px;
+    font-weight: 7;
+    
+}
+hr{
+    opacity:0.2;
+}
+.helpCenter{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    /* width: 100%; */
+}
+.helpCenter > p{
+    font-size: 20px;
+     
+
+}
+.helpCenter >p > span{
+    color:#3ebaff;
+}
+
+
+
+
+/* For Mobile Devices – 320px — 480px.
+iPads and Tablets – 481px — 768px.
+Laptops and small screen – 769px — 1024px.
+Large screens and Desktops – 1025px — 1200px.
+TV and Extra Large Screens – 1201px and more. */
+
+@media screen and (max-width:480px){
+    .center-nav {
+        display: none;
+        
+    }
+    .right-nav img:nth-child(1){
+        display: block;
+    }
+     .ytPremiumLogo > img {
+        width: 100%;
+        
+    }
+    .ytPremium {
+        height: 80%;
+        
+    }
+    .yt-desc {
+        width: 100%;
+        display: block;
+    }
+    .premium-details {
+        width: 100%;
+        
+    }
+    .premium-details p:nth-child(2){
+       
+        width: 100%;
+        
+    }
+    .yt-desc h2 {
+        width: 100%;
+        display: block;
+    }
+    .premium-details button {
+        
+        width: 40%;
+        
+    }
+    .features{
+        height: 120%;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        padding-top: 20px;
+    }
+    .features div:nth-child(1),.features div:nth-child(2),.features div:nth-child(3){
+       
+        width: 100%;
+    }
+    .bg1 ,.bg2{
+        
+        height: 30%;
+        background-position: center;
+    }
+    .bg1 div, .bg2 div{
+        padding: 0;
+        color: rgba(255, 255, 255, 0.642);
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        height: 100%;
+        gap: 10px;
+        padding: 20px 20px;
+    }
+    .bg1 h2,.bg2 h2{
+        font-size: 1.5rem;
+        font-weight: lighter;
+        
+    }
+    .bg1 p , .bg2 p{
+        font-size: smaller;
+        font-weight: 100;
+        width: 100%;
+    }
+    .faqs{
+       
+        height: 70%;
+        
+    }
+    .smallfaq{
+        width: 70%;
+        padding: 0 20px;
+    }
+   
+}
+@media screen and (min-width:481px) and (max-width:768px){
+    
+    .right-nav img:nth-child(1){
+        display: block;
+    }
+    .right-nav img:nth-child(2){
+        display:block ;
+    }
+    .center-nav {
+       display: none;
+        
+    }
+    .ytPremiumLogo > img {
+        width: 100%;
+        
+    }
+    .ytPremium {
+        height: 80%;
+        
+    }
+    .yt-desc {
+        width: 100%;
+        display: block;
+    }
+    .premium-details {
+        width: 100%;
+        
+    }
+    .premium-details p:nth-child(2){
+       
+        width: 80%;
+        
+    }
+    .yt-desc h2 {
+        margin: auto;
+        width: 70%;
+        display: block;
+        padding: 20px;
+    }
+    .premium-details button {
+        
+        width: 30%;
+        
+    }
+    .features{
+        height: 120%;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        padding-top: 20px;
+    }
+    .features div:nth-child(1),.features div:nth-child(2),.features div:nth-child(3){
+       
+        width: 100%;
+    }
+    .bg1 ,.bg2{
+        
+        height: 30%;
+        background-position: center;
+    }
+    .bg1 div, .bg2 div{
+        padding: 0;
+        color: rgba(255, 255, 255, 0.642);
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        height: 100%;
+        gap: 10px;
+        padding: 20px 20px;
+    }
+    .bg1 h2,.bg2 h2{
+        font-size: 1.5rem;
+        /* font-weight: lighter; */
+        
+    }
+    .bg1 p , .bg2 p{
+        font-size: smaller;
+        /* font-weight: 100; */
+        width: 70%;
+    }
+    
+
+}
+@media screen and (min-width:769px) and (max-width:1022px){
+    .ytPremiumLogo > img {
+        width: 100%;
+        
+    }
+    .ytPremium {
+        height: 80%;
+        
+    }
+    .yt-desc {
+        width: 100%;
+        display: block;
+    }
+    .premium-details {
+        width: 100%;
+        
+    }
+    .premium-details p:nth-child(2){
+       
+        width: 72%;
+        
+    }
+    .yt-desc h2 {
+        margin: auto;
+        width: 70%;
+        display: block;
+        padding: 20px;
+    }
+    .premium-details button {
+        
+        width: 28%;
+        
+    }
+    .features{
+        height: 120%;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        padding-top: 20px;
+    }
+    .features div:nth-child(1),.features div:nth-child(2),.features div:nth-child(3){
+       
+        width: 100%;
+    }
+    .bg1 div, .bg2 div{
+        padding: 0;
+        color: rgba(255, 255, 255, 0.642);
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        height: 100%;
+        gap: 10px;
+        padding: 20px 20px;
+    }
+    .bg1 h2,.bg2 h2{
+        font-size: 1.5rem;
+        font-weight: lighter;
+        
+    }
+    .bg1 p , .bg2 p{
+        font-size: smaller;
+        font-weight: 100;
+        width: 70%;
+        opacity: 200;
+    }
+    
+   
+}
+@media screen and (min-width:1023px) and (max-width:1200px){
+    .features{
+        height: 55%;
+    }
+    .premium-details p:nth-child(2){
+       
+        width: 60%;
+        
+    }
+   
+    .yt-desc{
+       
+        width: 60%;
+        
+        
+    }
+    .bg1 div, .bg2 div{
+        padding: 0;
+        color: rgba(255, 255, 255, 0.642);
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        height: 100%;
+        gap: 10px;
+        padding: 40px 40px;
+    }
+    .bg1 h2,.bg2 h2{
+        font-size: 2rem;
+        font-weight: lighter;
+        
+    }
+    .bg1 p , .bg2 p{
+        font-size: 1rem;
+        font-weight: 100;
+        width: 70%;
+       
+    }
+     
+}
+@media screen and (min-width:1201px) {
+    
+}
